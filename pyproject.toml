@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "en-me"
+version = "0.1.0"
+description = ""
+authors = ["Kostiantyn <lynx87@ukr.net>"]
+readme = "README.md"
+packages = [{include = "en_me"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.23.1"
+sqlalchemy = "^2.0.19"
+fastapi = {extras = ["all"], version = "^0.100.0"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+redis = "^4.6.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+fastapi-mail = "^1.4.1"
+psycopg2 = "^2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
